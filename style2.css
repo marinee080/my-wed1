@@ -1,0 +1,108 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
+    background-color: #f0f8ff; 
+    color: #333; 
+    
+}
+.navbar {
+    background-color: #ffb6c1;
+    padding:10px 20px;
+    display: flex;
+    width: 230%;
+    margin-bottom: 20px;
+}
+
+.navbar .logo {
+    font-size: 28px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ff69b4;
+}
+
+
+h1 {
+    color: #ff69b4; 
+    text-align: center;
+    margin: 20px;
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px; 
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+/* Card */
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 250px; /* กำหนดความกว้างของการ์ด */
+    text-align: center;
+}
+
+.card img {
+    width: 100%; /* ขยายภาพให้เต็มความกว้างของการ์ด */
+    height: auto; /* ปรับความสูงให้เหมาะสม */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+    font-family: 'Arial', sans-serif; /* ฟอนต์ที่อ่านง่าย */
+}
+
+.card .price {
+    color: #ff1493; /* สีชมพูสำหรับราคา */
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.card button {
+    background-color: #ff69b4; /* สีพื้นหลังของปุ่ม */
+    color: #fff; /* สีข้อความของปุ่ม */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #ff1493; /* สีพื้นหลังของปุ่มเมื่อวางเมาส์ */
+}

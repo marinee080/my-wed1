@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="Style1.css">
+</head>
+<body>
+    <nav class="navbar"> 
+        <a href="#" class="logo">scintila</a>
+        <ul class="nav-links"> 
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="login2.html">Login</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <form id="form-input" onsubmit="event.preventDefault(); FormSubmit();"> 
+        <h1>CRUD</h1>
+        <div class="inputtext">
+            Name ::
+            <input type="text" id="txtName">
+        </div>
+        <div class="inputtext">
+            Address ::
+            <input type="text" id="txtAddress">
+        </div>
+        <div class="inputtext">
+            Tel ::
+            <input type="text" id="txtTel">
+        </div>
+        <div class="btntext">
+            <input type="submit" value="Submit" class="btn">
+            <input type="reset" value="Cancel" class="btn">
+        </div>
+    </form>
+    <section>
+        <table id="tblContact" border="1">                          
+            <thead>
+                <tr>
+                    <th>ชื่อ-สกุล</th>
+                    <th>ที่อยู่</th>
+                    <th>เบอร์โทร</th>
+                    <th>เเก้ไข</th>
+                    <th>ลบ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="name"></td>
+                    <td id="address"></td>
+                    <td id="tel"></td> 
+                    <td id="edit"></td>
+                    <td id="del"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <script src="login.js"></script>
+</body>
+</html>
